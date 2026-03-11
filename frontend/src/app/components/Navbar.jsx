@@ -23,10 +23,10 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-primary/20">
       <div className='container mx-auto px-4' >
-        <div classsname='flex items-center justify-between h-16' >
+        <div className='flex items-center justify-between h-16' >
           <Link to='/' className='flex items-center gap-2 group' >
-            <Camera className='w-8 h-8 text-primary group-hover:text-secondary transition-colors' />
-            <span className='font-bold text-5xl bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent' >
+            <Camera className='w-10 h-10 text-primary group-hover:text-secondary transition-colors' />
+            <span className='font-bold text-4xl bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent' >
               Retro Rabbi
             </span>
           </Link>
@@ -84,9 +84,7 @@ function Navbar() {
                 <Button
                   icon={<User className='w-4 h-4 mr-2' />}
                   buttonText='Login'
-                  className="border-primary/50 hover:bg-primary hover:text-black"
-                />
-                  
+                /> 
               </Link>
             )}
           </div>
