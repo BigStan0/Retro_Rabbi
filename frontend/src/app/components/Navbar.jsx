@@ -9,9 +9,9 @@ function Navbar() {
   const { isAuthenticated, logout, user } = useAuth();
   const navLinks = [
     {path: '/', label: 'Home'},
-    {path: '/portfolio', label: 'portfolio'},
-    {path: '/booking', label: 'booking'},
-    {path: '/about', label: 'about'},
+    {path: '/portfolio', label: 'Portfolio'},
+    {path: '/booking', label: 'Booking'},
+    {path: '/about', label: 'About'},
   ]
   const isActive = (path) => {
     if (path === '/') {
@@ -73,15 +73,19 @@ function Navbar() {
                 </div>
                 <Button
                   onClick={logout}
+                  variant='outline'
+                  size='lg'
+                  className='border-primary/50 hover:bg-primary hover:text-black'
                   buttonText='Logout'
-                >
-                  <LogOut className="w-4 h-4 mr-2" />
-                  Logout
-                </Button>
+                  icon={<LogOut className="w-4 h-4 mr-2" />}
+                />
               </div>
             ) : (
               <Link to="/login">
                 <Button
+                  variant='outline'
+                  size='lg'
+                  className='border-primary/50 hover:bg-primary hover:text-black'
                   icon={<User className='w-4 h-4 mr-2' />}
                   buttonText='Login'
                 /> 
