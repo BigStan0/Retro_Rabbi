@@ -35,7 +35,7 @@ function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative py-2 transition-colors text-2xl ${
+                className={`relative py-2 transition-colors text-xl ${
                   isActive(link.path)
                     ? 'text-primary'
                     : 'text-gray-300 hover:text-primary'
